@@ -1,13 +1,13 @@
 require("dotenv").config();
-const express = require("express");
-const app = express();
+const app = require('./app/app')
 
+// CONNECT DB
 const mongoose = require("mongoose");
 const connectDatabase = async () => {
 	try {
 		mongoose.set("strictQuery", false);
 		await mongoose.connect(process.env.DB_URI);
-		console.log("connect DB ");
+		console.log("Connect MongoDB folder1_ecommercePizzeriaPortfolio_Api");
 	} catch (error) {
 		console.log(error);
 		process.exit(1);
@@ -15,11 +15,7 @@ const connectDatabase = async () => {
 };
 connectDatabase();
 
-// ROUTES
-app.get("/", (req, res) => {
-  res.json({message : "Full Project 1 - API Ecommerce MERN - Pizzeria"});
-});
-
+// LISTEN V1
 // Northflank va nous fournir une variable process.env.PORT
 // if (process.env.PORT) {
 //   app.listen(process.env.PORT, () => {
@@ -31,6 +27,7 @@ app.get("/", (req, res) => {
 //   });
 // }
 
+// LISTEN V2
 app.listen(process.env.PORT || 3200, () => {
   console.log("Server started");
 });
