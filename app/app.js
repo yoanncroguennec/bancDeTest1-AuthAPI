@@ -21,7 +21,10 @@ app.use(errorMiddleware)
 app.get("/", (req, res) => {
   res.json({message : "Full Project 1 - API Ecommerce MERN - Pizzeria"});
 });
+app.use('/api/auth', require('../server/routes/Auth.Routes'))
+app.use('/api/users', require('../server/routes/Users.Routes'))
 app.use('/api/products', require('../server/routes/Products.Routes'))
 app.use('/api/restaurants', require('../server/routes/Restaurants.Routes'))
+
 
 module.exports = app
