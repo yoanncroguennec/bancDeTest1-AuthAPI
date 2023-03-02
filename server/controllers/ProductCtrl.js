@@ -25,11 +25,12 @@ exports.getProduct = async (req, res, next) => {
 }
 
 exports.getAllProducts = async (req, res, next) => {
-    const product = await Product.find();
+    const productsCount = await Product.countDocuments();
+    const products = await Product.find();
 
     res.status(201).json({
         success: true,
-        count: product.length,
-        product
+        productsCount,
+        products
     })
 }
