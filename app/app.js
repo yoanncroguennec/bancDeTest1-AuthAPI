@@ -2,6 +2,7 @@ const express = require('express');
 const cookieParser = require('cookie-parser')
 const bodyParser = require('body-parser')
 const fileUpload = require('express-fileupload')
+const cors = require('cors')
 // SERVER MIDDLEWARES EERORS
 const errorMiddleware = require("../server/middlewares/errors/errors")
 
@@ -13,6 +14,7 @@ app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser())
 app.use(fileUpload());
+app.use(cors())
 
 // Middleware to handle errors (Try/Catch)
 app.use(errorMiddleware)
