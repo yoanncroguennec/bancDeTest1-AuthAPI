@@ -1,4 +1,6 @@
-require("dotenv").config();
+// Setting up config file
+if (process.env.NODE_ENV !== 'PRODUCTION') require('dotenv').config()
+// require("dotenv").config();
 const app = require('./app/app')
 
 // CONNECT DB
@@ -29,5 +31,5 @@ connectDatabase();
 
 // LISTEN V2
 app.listen(process.env.PORT || 3200, () => {
-  console.log("Server started");
+  console.log(`Server started in ${process.env.NODE_ENV} mode.`);
 });

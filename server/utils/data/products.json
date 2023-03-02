@@ -1,0 +1,145 @@
+[
+    {
+        "name" : "MARGHERITA",
+        "price" : "9.95",
+        "description" : "TOMATE, BASILIC, MOZZARELLA, HUILE D'OLIVE",
+        "photos" : [{
+            "public_id" : "products/dsvbpny402gelwugv2le",
+            "url" : "https://www.pizzeriamammarosa.it/2021/wp-content/uploads/2021/06/margherita-mammarosa-ortezzano-scaled-600x600.jpg"
+        }],
+        "category" : "Pizzas",
+        "stock" : 250
+    },
+    {
+        "name" : "MARINARA DE MARCÈ",
+        "price" : "13.50",
+        "description" : "TOMATE, AIL, ORIGAN, FROMAGE PARMESAN, OLIVES NOIRES HACHÉES, TOMATES CERISES, BASILIC, HUILE D'OLIVE",
+        "photos" : [{
+            "public_id" : "products/dsvbpny402gelwugv2le",
+            "url" : "https://www.pizzeriamammarosa.it/2021/wp-content/uploads/2021/06/marinara-di-marce-mammarosa-ortezzano-scaled-600x600.jpg"
+        }],
+        "category" : "Pizzas",
+        "stock" : 250
+    },
+    {
+        "name" : "CORNICIONE",
+        "price" : "11.99",
+        "description" : "TOMATE, MOZZARELLA, BASILIC, RICOTTA, PEPPERONI.",
+        "photos" : [{
+            "public_id" : "products/dsvbpny402gelwugv2le",
+            "url" : "https://www.pizzeriamammarosa.it/2021/wp-content/uploads/2021/06/pizza-cornicione-mammarosa-ortezzano-scaled-600x600.jpg"
+        }],
+        "category" : "Pizzas",
+        "stock" : 250
+    },
+    {
+        "name" : "SALMONE",
+        "price" : "16.50",
+        "description" : "MOZZARELLA, SAUMON FUMÉ, POIVRE ROSE, ROQUETTE ET CITRON.",
+        "photos" : [{
+            "public_id" : "products/dsvbpny402gelwugv2le",
+            "url" : "https://www.pizzeriamammarosa.it/2021/wp-content/uploads/2021/06/pizza-salmone-mammarosa-ortezzano-1-scaled-600x600.jpg"
+        }],
+        "category" : "Pizzas",
+        "stock" : 250
+    },
+    {
+        "name" : "PAN DI LIMONE",
+        "price" : "14.00",
+        "description" : "MOZZARELLA, MAQUEREAU, OIGNON PEDASO, MARMELADE DE PAIN AU CITRON, PERSIL.",
+        "photos" : [{
+            "public_id" : "products/dsvbpny402gelwugv2le",
+            "url" : "https://www.pizzeriamammarosa.it/2021/wp-content/uploads/2021/06/pan-di-limone-mammarosa-ortezzano-scaled-600x600.jpg"
+        }],
+        "category" : "Pizzas",
+        "stock" : 250
+    },
+    {
+        "name" : "CAPRICCIOSA TOP",
+        "price" : "16.50",
+        "description" : "CÈPES DES MONTS SIBILLINI, ARTICHAUTS, JAMBON CUIT D'UNE FERME LOCALE, MOZZARELLA AU LAIT DES PÂTURAGES DES MONTS SIBILLINI, OLIVES VERTES",
+        "photos" : [{
+            "public_id" : "products/dsvbpny402gelwugv2le",
+            "url" : "https://www.pizzeriamammarosa.it/2021/wp-content/uploads/2021/06/capricciosa-top-mammarosa-ortezzano-1-scaled-600x600.jpg"
+        }],
+        "category" : "Pizzas",
+        "stock" : 250
+    },
+    {
+        "name" : "CIABUSCOLOSA",
+        "price" : "17.50",
+        "description" : "FAVE DELLA VALDASO, CACIOTTA DI URBINO DOP (FROMAGE), CIAUSCOLO IGP (SAUCISE), MOZZARELLA.",
+        "photos" : [{
+            "public_id" : "products/dsvbpny402gelwugv2le",
+            "url" : "https://www.pizzeriamammarosa.it/2021/wp-content/uploads/2021/06/CIABUSCOLOSA-MAMMAROSA-ORTEZZANO-scaled-600x600.jpg"
+        }],
+        "category" : "Pizzas",
+        "stock" : 250
+    },
+    {
+        "name" : "O'LIVE",
+        "price" : "17.50",
+        "description" : "OLIVES ASCOLI FAITES À LA MAIN ET CUITES AU FOUR, FIOR DI LATTE LOCAL, RICOTTA DE BUFFLE, NOIX, ROQUETTE, SAUCE AUX TRUFFES DES MONTS SIBILLINI, POIVRE NOIR, TOMATES CERISES, BASILIC ET HUILE D'OLIVE.",
+        "photos" : [{
+            "public_id" : "products/dsvbpny402gelwugv2le",
+            "url" : "https://www.pizzeriamammarosa.it/2021/wp-content/uploads/2021/06/Olive-mammarosa-ortezzano-1-scaled-600x600.jpg"
+        }],
+        "category" : "Pizzas",
+        "stock" : 250
+    },
+    {
+        "name" : "CAPRINA",
+        "price" : "16.00",
+        "description" : "MOZZARELLA, ASPERGES, ŒUFS DE CAILLE, BACON CROUSTILLANT, FROMAGE DE CHÈVRE, POIVRE.",
+        "photos" : [{
+            "public_id" : "products/dsvbpny402gelwugv2le",
+            "url" : "https://www.pizzeriamammarosa.it/2021/wp-content/uploads/2021/06/PIZZA-CAPRINA-MAMMAROSA-ORTEZZANO-2-scaled-600x600.jpg"
+        }],
+        "category" : "Pizzas",
+        "stock" : 250
+    },
+    {
+        "name" : "CINARA",
+        "price" : "14.00",
+        "description" : "FROMAGE PROVOLONE, ARTICHAUTS FRAIS ET BACON.",
+        "photos" : [{
+            "public_id" : "products/dsvbpny402gelwugv2le",
+            "url" : "https://www.pizzeriamammarosa.it/2021/wp-content/uploads/2021/06/pizza-cinara-mammarosa-ortezzano-1-scaled-600x600.jpg"
+        }],
+        "category" : "Pizzas",
+        "stock" : 250
+    },
+    {
+        "name" : "PESCE SPADA",
+        "price" : "17.50",
+        "description" : "MOZZARELLA, ESPADON, PESTO DE ROQUETTE, CITRON RÂPÉ ET TOMATES CERISES.",
+        "photos" : [{
+            "public_id" : "products/dsvbpny402gelwugv2le",
+            "url" : "https://www.pizzeriamammarosa.it/2021/wp-content/uploads/2021/06/pizza-pesce-spada-mammarosa-ortezzano-1-scaled-600x600.jpg"
+        }],
+        "category" : "Pizzas",
+        "stock" : 250
+    },
+    {
+        "name" : "PESCHE DELLA VALDASO",
+        "price" : "11.00",
+        "description" : "PÊCHES DE VALDASO, SUCRE, VIN CUIT.",
+        "photos" : [{
+            "public_id" : "products/dsvbpny402gelwugv2le",
+            "url" : "https://www.pizzeriamammarosa.it/2021/wp-content/uploads/2021/06/pizza-pesche-mammarosa-ortezzano-scaled-600x600.jpg"
+        }],
+        "category" : "Pizzas",
+        "stock" : 250
+    },
+    {
+        "name" : "NUTELLA E FRAGOLE",
+        "price" : "12.50",
+        "description" : "NUTELLA, DES FRAISES ET DES POMMES.",
+        "photos" : [{
+            "public_id" : "products/dsvbpny402gelwugv2le",
+            "url" : "https://www.pizzeriamammarosa.it/2021/wp-content/uploads/2021/06/nutella-e-fragole-mammarosa-scaled-600x600.jpg"
+        }],
+        "category" : "Pizzas",
+        "stock" : 250
+    }
+]

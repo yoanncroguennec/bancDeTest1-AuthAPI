@@ -1,0 +1,122 @@
+[
+    {
+        "name": "Pizzeria - Saint-Brieuc",
+        "description": "",
+        "photos": [
+            {
+                "public_id": "a560cdc0",
+                "url": "https://res.cloudinary.com/dky2vpnyr/image/upload/v1677615980/Pizzeria/restaurants/henry-perks-nWAMKy3rSGY-unsplash_b8498i.jpg"
+            },
+            {
+                "public_id": "38eb9bfe",
+                "url": "https://res.cloudinary.com/dky2vpnyr/image/upload/v1677617399/Pizzeria/restaurants/pexels-ikeen-james-2274787_qfujgt.jpg"
+            },
+            {
+                "public_id": "3e3b2eda",
+                "url": "https://res.cloudinary.com/dky2vpnyr/image/upload/v1677616868/Pizzeria/restaurants/louis-hansel-W75bFvPPrK8-unsplash_vm2ao5.jpg"
+            },
+            {
+                "public_id": "25308387",
+                "url": "https://res.cloudinary.com/dky2vpnyr/image/upload/v1677616868/Pizzeria/restaurants/phillip-goldsberry-s2jrgQ844vg-unsplash_bnhg72.jpg"
+            },
+            {
+                "public_id": "db9f14c0",
+                "url": "https://res.cloudinary.com/dky2vpnyr/image/upload/v1677616867/Pizzeria/restaurants/louis-hansel-h_s7AUBPss8-unsplash_ixtwpn.jpg"
+            }
+        ],
+        "address": "Place duguesclin, 22000 Saint-Brieuc",
+        "phoneNumberRestaurant": "02986754615",
+        "emailRestaurant": "test1@gmail.com",
+        "location": ["48.51418", "-2.765835"]
+    },
+    {
+        "name": "Pizzeria - Paris",
+        "description": "",
+        "photos": [
+            {
+                "public_id": "a560cdc0",
+                "url": "https://res.cloudinary.com/dky2vpnyr/image/upload/v1677615980/Pizzeria/restaurants/henry-perks-nWAMKy3rSGY-unsplash_b8498i.jpg"
+            },
+            {
+                "public_id": "38eb9bfe",
+                "url": "https://res.cloudinary.com/dky2vpnyr/image/upload/v1677617399/Pizzeria/restaurants/pexels-ikeen-james-2274787_qfujgt.jpg"
+            },
+            {
+                "public_id": "3e3b2eda",
+                "url": "https://res.cloudinary.com/dky2vpnyr/image/upload/v1677616868/Pizzeria/restaurants/louis-hansel-W75bFvPPrK8-unsplash_vm2ao5.jpg"
+            },
+            {
+                "public_id": "25308387",
+                "url": "https://res.cloudinary.com/dky2vpnyr/image/upload/v1677616868/Pizzeria/restaurants/phillip-goldsberry-s2jrgQ844vg-unsplash_bnhg72.jpg"
+            },
+            {
+                "public_id": "db9f14c0",
+                "url": "https://res.cloudinary.com/dky2vpnyr/image/upload/v1677616867/Pizzeria/restaurants/louis-hansel-h_s7AUBPss8-unsplash_ixtwpn.jpg"
+            }
+        ],
+        "address": "Place de l'Europe, 75010 Paris",
+        "phoneNumberRestaurant": "08986754615",
+        "emailRestaurant": "test2@gmail.com",
+        "location": ["48.856614", "2.3522219"]
+    },
+    {
+        "name": "Pizzeria - Rocamadour",
+        "description": "",
+        "photos": [
+            {
+                "public_id": "a560cdc0",
+                "url": "https://res.cloudinary.com/dky2vpnyr/image/upload/v1677615980/Pizzeria/restaurants/caleb-mcguire-ILk4oEgW5E4-unsplash_kf1hoc.jpg"
+            },
+            {
+                "public_id": "38eb9bfe",
+                "url": "https://res.cloudinary.com/dky2vpnyr/image/upload/v1677617400/Pizzeria/restaurants/pexels-anna-shvets-5953500_mkd2of.jpg"
+            },
+            {
+                "public_id": "3e3b2eda",
+                "url": "https://res.cloudinary.com/dky2vpnyr/image/upload/v1677616867/Pizzeria/restaurants/luis-moura-GsjxR65BXbI-unsplash_ffm8vo.jpg"
+            },
+            {
+                "public_id": "25308387",
+                "url": "https://res.cloudinary.com/dky2vpnyr/image/upload/v1677616867/Pizzeria/restaurants/natasha-reddy-ZAiOE5lVhNM-unsplash_tjf9cw.jpg"
+            },
+            {
+                "public_id": "db9f14c0",
+                "url": "https://res.cloudinary.com/dky2vpnyr/image/upload/v1677616867/Pizzeria/restaurants/luis-moura-GsjxR65BXbI-unsplash_ffm8vo.jpg"
+            }
+        ],
+        "address": "Place du bourg, 46500 Rocamadour",
+        "phoneNumberRestaurant": "0549875455",
+        "emailRestaurant": "test3@gmail.com",
+        "location": ["44.8005", "1.619"]
+    },
+    {
+        "name": "Pizzeria - Saint-Lary-Soulan",
+        "description": "",
+        "photos": [
+            {
+                "public_id": "253083d87",
+                "url": "https://res.cloudinary.com/dky2vpnyr/image/upload/v1677763409/Pizzeria/restaurants/giazza-2829551_1920_ksybwp.jpg"
+            },
+            {
+                "public_id": "2530s8387",
+                "url": "https://res.cloudinary.com/dky2vpnyr/image/upload/v1677763410/Pizzeria/restaurants/pexels-anna-shvets-5953591_hnehku.jpg"
+            },
+            {
+                "public_id": "2530r8387",
+                "url": "https://res.cloudinary.com/dky2vpnyr/image/upload/v1677763410/Pizzeria/restaurants/pexels-ruslan-khmelevsky-14129128_yjucri.jpg"
+            },
+            {
+                "public_id": "2530e8387",
+                "url": "https://res.cloudinary.com/dky2vpnyr/image/upload/v1677763410/Pizzeria/restaurants/pexels-roman-odintsov-5903389_l6jvit.jpg"
+            },
+            {
+                "public_id": "25g308387",
+                "url": "https://res.cloudinary.com/dky2vpnyr/image/upload/v1677763490/Pizzeria/restaurants/pexels-roman-odintsov-6147978_wzaema.jpg"
+            }
+        ],
+        "address": "Place de la montagne, 65170 Saint-Lary-Soulan",
+        "phoneNumberRestaurant": "079542167815",
+        "emailRestaurant": "test4@gmail.com",
+        "location": ["42.816669", "0.31667"]
+    }
+]
