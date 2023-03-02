@@ -18,7 +18,7 @@ exports.getRestaurant = async (req, res, next) => {
 }
 
 exports.getAllRestaurants = async (req, res, next) => {
-    const restaurantsCount = await Product.countDocuments();
+    const restaurantsCount = await Restaurant.countDocuments();
     const restaurants = await Restaurant.find();
 
     res.status(201).json({
