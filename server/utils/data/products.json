@@ -2,7 +2,7 @@
     {
         "name" : "MARGHERITA",
         "price" : "9.95",
-        "description" : "TOMATE, BASILIC, MOZZARELLA, HUILE D'OLIVE",
+        "description" : "Tomate, Basilic, Mozzarella, Huile d'olive",
         "photos" : [{
             "public_id" : "products/dsvbpny402gelwugv2le",
             "url" : "https://www.pizzeriamammarosa.it/2021/wp-content/uploads/2021/06/margherita-mammarosa-ortezzano-scaled-600x600.jpg"
@@ -13,7 +13,7 @@
     {
         "name" : "MARINARA DE MARCÈ",
         "price" : "13.50",
-        "description" : "TOMATE, AIL, ORIGAN, FROMAGE PARMESAN, OLIVES NOIRES HACHÉES, TOMATES CERISES, BASILIC, HUILE D'OLIVE",
+        "description" : "Tomate, Ail, Origan, Fromage Parmesan, Olives noires hachées, Tomates cerises, Basilic, Huile d'olive",
         "photos" : [{
             "public_id" : "products/dsvbpny402gelwugv2le",
             "url" : "https://www.pizzeriamammarosa.it/2021/wp-content/uploads/2021/06/marinara-di-marce-mammarosa-ortezzano-scaled-600x600.jpg"
@@ -24,7 +24,7 @@
     {
         "name" : "CORNICIONE",
         "price" : "11.99",
-        "description" : "TOMATE, MOZZARELLA, BASILIC, RICOTTA, PEPPERONI.",
+        "description" : "Tomate, Mozzarella, Basilic, Ricotta, Pepperoni.",
         "photos" : [{
             "public_id" : "products/dsvbpny402gelwugv2le",
             "url" : "https://www.pizzeriamammarosa.it/2021/wp-content/uploads/2021/06/pizza-cornicione-mammarosa-ortezzano-scaled-600x600.jpg"
@@ -35,7 +35,7 @@
     {
         "name" : "SALMONE",
         "price" : "16.50",
-        "description" : "MOZZARELLA, SAUMON FUMÉ, POIVRE ROSE, ROQUETTE ET CITRON.",
+        "description" : "Mozzarella, Saumon fumé, Poivre rose, Roquette & Citron.",
         "photos" : [{
             "public_id" : "products/dsvbpny402gelwugv2le",
             "url" : "https://www.pizzeriamammarosa.it/2021/wp-content/uploads/2021/06/pizza-salmone-mammarosa-ortezzano-1-scaled-600x600.jpg"
@@ -46,7 +46,7 @@
     {
         "name" : "PAN DI LIMONE",
         "price" : "14.00",
-        "description" : "MOZZARELLA, MAQUEREAU, OIGNON PEDASO, MARMELADE DE PAIN AU CITRON, PERSIL.",
+        "description" : "Mozzarella, Maquereau, Oignons Pedaso, Marmelade de pain au Citron, Persil.",
         "photos" : [{
             "public_id" : "products/dsvbpny402gelwugv2le",
             "url" : "https://www.pizzeriamammarosa.it/2021/wp-content/uploads/2021/06/pan-di-limone-mammarosa-ortezzano-scaled-600x600.jpg"
@@ -57,7 +57,7 @@
     {
         "name" : "CAPRICCIOSA TOP",
         "price" : "16.50",
-        "description" : "CÈPES DES MONTS SIBILLINI, ARTICHAUTS, JAMBON CUIT D'UNE FERME LOCALE, MOZZARELLA AU LAIT DES PÂTURAGES DES MONTS SIBILLINI, OLIVES VERTES",
+        "description" : "Cèpes des Monts Sibillini, Artichauts, Jambon cuit (local), Mozzarella (Lait des pâturages des Monts Sibillini), Olives vertes.",
         "photos" : [{
             "public_id" : "products/dsvbpny402gelwugv2le",
             "url" : "https://www.pizzeriamammarosa.it/2021/wp-content/uploads/2021/06/capricciosa-top-mammarosa-ortezzano-1-scaled-600x600.jpg"
@@ -68,7 +68,7 @@
     {
         "name" : "CIABUSCOLOSA",
         "price" : "17.50",
-        "description" : "FAVE DELLA VALDASO, CACIOTTA DI URBINO DOP (FROMAGE), CIAUSCOLO IGP (SAUCISE), MOZZARELLA.",
+        "description" : "Fave Della Valdaso, Caciotta di Urbino DOP (Fromage), Ciauscolo IGP (Saucisse), Mozzarella.",
         "photos" : [{
             "public_id" : "products/dsvbpny402gelwugv2le",
             "url" : "https://www.pizzeriamammarosa.it/2021/wp-content/uploads/2021/06/CIABUSCOLOSA-MAMMAROSA-ORTEZZANO-scaled-600x600.jpg"
@@ -79,7 +79,7 @@
     {
         "name" : "O'LIVE",
         "price" : "17.50",
-        "description" : "OLIVES ASCOLI FAITES À LA MAIN ET CUITES AU FOUR, FIOR DI LATTE LOCAL, RICOTTA DE BUFFLE, NOIX, ROQUETTE, SAUCE AUX TRUFFES DES MONTS SIBILLINI, POIVRE NOIR, TOMATES CERISES, BASILIC ET HUILE D'OLIVE.",
+        "description" : "Olives Ascoli faites à la main (cuites au four), Fior di Latte (local), Ricotta de Buffle, Noix, Roquette, Sauce aux truffes des Monts Sibilline, Poivre noir, Tomates CERISES, Basilic & Huile d'olive.",
         "photos" : [{
             "public_id" : "products/dsvbpny402gelwugv2le",
             "url" : "https://www.pizzeriamammarosa.it/2021/wp-content/uploads/2021/06/Olive-mammarosa-ortezzano-1-scaled-600x600.jpg"
@@ -90,7 +90,7 @@
     {
         "name" : "CAPRINA",
         "price" : "16.00",
-        "description" : "MOZZARELLA, ASPERGES, ŒUFS DE CAILLE, BACON CROUSTILLANT, FROMAGE DE CHÈVRE, POIVRE.",
+        "description" : "Mozzarella, Asperges, oeufs de caille, Bacon, Fromage de chèvre, Poivre.",
         "photos" : [{
             "public_id" : "products/dsvbpny402gelwugv2le",
             "url" : "https://www.pizzeriamammarosa.it/2021/wp-content/uploads/2021/06/PIZZA-CAPRINA-MAMMAROSA-ORTEZZANO-2-scaled-600x600.jpg"
@@ -101,7 +101,7 @@
     {
         "name" : "CINARA",
         "price" : "14.00",
-        "description" : "FROMAGE PROVOLONE, ARTICHAUTS FRAIS ET BACON.",
+        "description" : "Fromage Provolone, Artichauts frais & Bacon.",
         "photos" : [{
             "public_id" : "products/dsvbpny402gelwugv2le",
             "url" : "https://www.pizzeriamammarosa.it/2021/wp-content/uploads/2021/06/pizza-cinara-mammarosa-ortezzano-1-scaled-600x600.jpg"
@@ -112,7 +112,7 @@
     {
         "name" : "PESCE SPADA",
         "price" : "17.50",
-        "description" : "MOZZARELLA, ESPADON, PESTO DE ROQUETTE, CITRON RÂPÉ ET TOMATES CERISES.",
+        "description" : "Mozzerella, Espadon, Pesto de roquette, Citron râpé et Tomates cerises.",
         "photos" : [{
             "public_id" : "products/dsvbpny402gelwugv2le",
             "url" : "https://www.pizzeriamammarosa.it/2021/wp-content/uploads/2021/06/pizza-pesce-spada-mammarosa-ortezzano-1-scaled-600x600.jpg"
@@ -123,7 +123,7 @@
     {
         "name" : "PESCHE DELLA VALDASO",
         "price" : "11.00",
-        "description" : "PÊCHES DE VALDASO, SUCRE, VIN CUIT.",
+        "description" : "Pêches de Valdaso, Sucre, Vin cuit+.",
         "photos" : [{
             "public_id" : "products/dsvbpny402gelwugv2le",
             "url" : "https://www.pizzeriamammarosa.it/2021/wp-content/uploads/2021/06/pizza-pesche-mammarosa-ortezzano-scaled-600x600.jpg"
@@ -134,7 +134,7 @@
     {
         "name" : "NUTELLA E FRAGOLE",
         "price" : "12.50",
-        "description" : "NUTELLA, DES FRAISES ET DES POMMES.",
+        "description" : "Nutella, Fraises, Pommes.",
         "photos" : [{
             "public_id" : "products/dsvbpny402gelwugv2le",
             "url" : "https://www.pizzeriamammarosa.it/2021/wp-content/uploads/2021/06/nutella-e-fragole-mammarosa-scaled-600x600.jpg"

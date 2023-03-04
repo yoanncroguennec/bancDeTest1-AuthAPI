@@ -6,22 +6,30 @@ const router = express.Router();
 **************************************************************** */
 const {
     getProduct,
-    getAllProducts
+    getAllProducts,
 } = require('../controllers/ProductCtrl')
 /* ****************************************************************
 ************************** ADMINISTRATOR **************************
 **************************************************************** */
 const {
-    newProduct
+    newProduct,
+    updateProduct,
+    deleteProduct,
 } = require('../controllers/admin/ProductCtrl_Admin')
+// MIDDLEWARES
+const { isAuthenticatedUser, authorizeRoles } = require('../middlewares/auth/auth');
 
 
 
 router.route('/')
-    .post(newProduct)
+    .post(isAuthenticatedUser, newProduct)
     .get(getAllProducts);
 
 router.route('/:id')
     .get(getProduct);
+
+router.route('/admin/:id')
+    .put(isAuthenticatedUser, authorizeRoles('admin'), updateProduct)
+    .delete(isAuthenticatedUser, authorizeRoles('admin'), deleteProduct);
 
 module.exports = router;

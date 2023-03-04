@@ -1,8 +1,10 @@
 const express = require('express');
-const cookieParser = require('cookie-parser')
 const bodyParser = require('body-parser')
-const fileUpload = require('express-fileupload')
 const cors = require('cors')
+// For auth
+const cookieParser = require('cookie-parser')
+// For auth & resturants & products
+const fileUpload = require('express-fileupload')
 // SERVER MIDDLEWARES EERORS
 const errorMiddleware = require("../server/middlewares/errors/errors")
 
@@ -12,7 +14,9 @@ const app = express();
 // MIDDLEWARES
 app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+// For auth
 app.use(cookieParser())
+// For auth & resturants & products
 app.use(fileUpload());
 app.use(cors())
 

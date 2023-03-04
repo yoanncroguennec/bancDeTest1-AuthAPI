@@ -2,7 +2,7 @@ const jwt = require("jsonwebtoken");
 // MODELS
 const User = require('../../models/User')
 // MIDDLEWARES ERRORS
-const catchAsyncErrors = require("../errors/catchAsyncErrors");
+// const catchAsyncErrors = require("../errors/catchAsyncErrors");
 // UTILS ERRORS
 const ErrorHandler = require("../../utils/errors/errorHandler");
 
@@ -10,7 +10,7 @@ const ErrorHandler = require("../../utils/errors/errorHandler");
 
 
 // Checks if user is authenticated or not
-exports.isAuthenticatedUser = catchAsyncErrors(async (req, res, next) => {
+exports.isAuthenticatedUser = async (req, res, next) => {
 
     const { token } = req.cookies
 
@@ -22,7 +22,7 @@ exports.isAuthenticatedUser = catchAsyncErrors(async (req, res, next) => {
     req.user = await User.findById(decoded.id);
 
     next()
-})
+}
 
 // Handling users roles
 exports.authorizeRoles = (...roles) => {
