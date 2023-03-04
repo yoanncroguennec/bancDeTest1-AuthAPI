@@ -27,9 +27,9 @@ exports.isAuthenticatedUser = async (req, res, next) => {
 // Handling users roles
 exports.authorizeRoles = (...roles) => {
     return (req, res, next) => {
-        if (!roles.includes(req.user.role)) {
+        if (!roles.includes(req.user.admin)) {
             return next(
-                new ErrorHandler("Vous êtes (${req.user.role}) n'est pas autorisé à accéder à cette ressource", 403))
+                new ErrorHandler(`Vous êtes (${req.user.admin}) n'est pas autorisé à accéder à cette ressource`, 403))
         }
         next()
     }

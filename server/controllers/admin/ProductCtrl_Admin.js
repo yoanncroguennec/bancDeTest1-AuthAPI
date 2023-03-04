@@ -5,6 +5,10 @@ const Product = require('../../models/Product')
 
 
 exports.newProduct = async (req, res, next) => {
+
+    // Chope ID de l'User, donc obligé de se loguer pour add a product
+    req.body.user = req.user.id;
+
     const product = await Product.create(req.body);
 
     res.status(201).json({

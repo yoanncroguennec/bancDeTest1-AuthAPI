@@ -49,6 +49,11 @@ const productSchema = new mongoose.Schema({
         maxLength: [5, 'La quantité de stock du produit ne peut pas dépasser 5 caractères'],
         default: 0
     },
+    user:{
+        type: mongoose.Schema.ObjectId,
+        ref: "User",
+        required: true
+    },
     createdAt: {
         type: Date,
         default: Date.now
