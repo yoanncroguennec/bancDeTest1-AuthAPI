@@ -1,2 +1,2 @@
 <h1 align="center">API ECOMMERCE MERN - Pizzeria</h1>
-<p align="center"><img src="https://res.cloudinary.com/dky2vpnyr/image/upload/v1678030308/Pizzeria/PartieDev/back_tvmz3m.png" height="900" width="700" alt="Back Api Ecommerce Pizzeria"/></p>
+<p align="center"><img src="https://res.cloudinary.com/dky2vpnyr/image/upload/v1678030308/Pizzeria/PartieDev/back_tvmz3m.png" height="700" width="700" alt="Back Api Ecommerce Pizzeria"/></p>
