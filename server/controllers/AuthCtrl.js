@@ -1,10 +1,17 @@
 const User = require('../models/User');
 // UTILS JWT
 const sendToken = require("../utils/jwt/jwtToken")
-
+const cloudinary = require('cloudinary');
 
 
 exports.register = async (req, res, next) => {
+
+    const result = await cloudinary.v2.uploader.upload(req.body.avatar, {
+        folder: 'avatars',
+        width: 150,
+        crop: "scale"
+    })
+
     const { firstName, lastName, email, password, sex} = req.body;
 
     const user = await User.create({
@@ -13,8 +20,8 @@ exports.register = async (req, res, next) => {
         email,
         password,
         avatar: {
-            public_id: "784556555",
-            url: "https://res.cloudinary.com/dky2vpnyr/image/upload/v1661964405/Pizzeria/pechesDeValdaso_xkwrdx.jpg"
+            public_id: result.public_id,
+            url: result.secure_url
         },
         sex
     })

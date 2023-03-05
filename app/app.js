@@ -1,4 +1,5 @@
 const express = require('express');
+// "body-parser" la même chose que "express"
 const bodyParser = require('body-parser')
 const cors = require('cors')
 // For auth
@@ -13,15 +14,22 @@ const app = express();
 
 // MIDDLEWARES
 app.use(express.json());
+app.use(cors())
 app.use(bodyParser.urlencoded({ extended: true }));
 // For auth
 app.use(cookieParser())
 // For auth & resturants & products
 app.use(fileUpload());
-app.use(cors())
-
 // Middleware to handle errors (Try/Catch)
 app.use(errorMiddleware)
+
+// Setting up cloudinary configuration
+const cloudinary = require('cloudinary')
+cloudinary.config({
+    cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
+    api_key: process.env.CLOUDINARY_API_KEY,
+    api_secret: process.env.CLOUDINARY_API_SECRET
+})
 
 // ROUTES
 app.get("/", (req, res) => {
