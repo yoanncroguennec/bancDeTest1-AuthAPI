@@ -6,8 +6,7 @@ const cors = require('cors')
 const cookieParser = require('cookie-parser')
 // For auth & resturants & products
 const fileUpload = require('express-fileupload')
-// SERVER MIDDLEWARES EERORS
-const errorMiddleware = require("../server/middlewares/errors/errors")
+
 
 // Create server, it's the variable "app" 
 const app = express();
@@ -20,6 +19,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser())
 // For auth & resturants & products
 app.use(fileUpload());
+
+// SERVER MIDDLEWARES EERORS
+const errorMiddleware = require("../server/middlewares/errors/errors")
 // Middleware to handle errors (Try/Catch)
 app.use(errorMiddleware)
 

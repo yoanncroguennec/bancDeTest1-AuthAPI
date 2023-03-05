@@ -1,10 +1,16 @@
+// MODELS
 const User = require('../models/User');
+// MIDDLEWARES ERRORS
+const ErrorHandler = require('../utils/errors/errorHandler');
+// UTILS ERRORS
+const catchAsyncErrors = require('../middlewares/errors/catchAsyncErrors');
 // UTILS JWT
 const sendToken = require("../utils/jwt/jwtToken")
 const cloudinary = require('cloudinary');
 
 
-exports.register = async (req, res, next) => {
+// Arguments ("res" & "req") de la callback
+exports.registerUser = catchAsyncErrors(async (req, res, next) => {
 
     const result = await cloudinary.v2.uploader.upload(req.body.avatar, {
         folder: 'avatars',
@@ -27,9 +33,9 @@ exports.register = async (req, res, next) => {
     })
 
     sendToken(user, 200, res)
-}
+})
 
-exports.login = async (req, res, next) => {
+exports.login = catchAsyncErrors(async (req, res, next) => {
     const { email, password } = req.body;
 
     // Checks if email and password is entered by user
@@ -54,9 +60,9 @@ exports.login = async (req, res, next) => {
 
     // Function "sendToken" in "UTILS JWT" pour stocker le token dans le cookie
     sendToken(user, 200, res)
-}
+})
 
-exports.logout = async (req, res, next) => {
+exports.logout = catchAsyncErrors(async (req, res, next) => {
     res.cookie('token', null, {
         expires: new Date(Date.now()),
         httpOnly: true
@@ -66,5 +72,4 @@ exports.logout = async (req, res, next) => {
         success: true,
         message: 'Déconnecté'
     })
-}
-
+})

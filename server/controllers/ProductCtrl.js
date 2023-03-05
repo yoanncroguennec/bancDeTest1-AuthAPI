@@ -1,30 +1,28 @@
 /* ***************************************************************************
 ******************************** USER PRODUCT ********************************
 *************************************************************************** */
+// MODELS
 const Product = require('../models/Product')
-//
-const ErrorHandler = require("../utils/errorHandler")
+// MIDDLEWARES ERRORS
+const ErrorHandler = require('../utils/errors/errorHandler');
+// UTILS ERRORS
+const catchAsyncErrors = require('../middlewares/errors/catchAsyncErrors');
 
 
-exports.getProduct = async (req, res, next) => {
+exports.getProduct = catchAsyncErrors(async (req, res, next) => {
     const product = await Product.findById(req.params.id);
 
-    // if(!product) {
-    //     return next(new ErrorHandler("Produit non trouvé", 404));
-    // }
-
-    if(!product) return res.status(201).json({
-        success: false,
-        message: "Produit non trouvé."
-    })
-
+    if(!product) {
+        return next(new ErrorHandler("Produit non trouvé", 404));
+    }
+    
     res.status(201).json({
         success: true,
         product
     })
-}
+})
 
-exports.getAllProducts = async (req, res, next) => {
+exports.getAllProducts = catchAsyncErrors(async (req, res, next) => {
     const productsCount = await Product.countDocuments();
     const products = await Product.find();
 
@@ -33,4 +31,4 @@ exports.getAllProducts = async (req, res, next) => {
         productsCount,
         products
     })
-}
+})

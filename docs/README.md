@@ -1,1 +1,2 @@
-# API ECOMMERCE MERN - Pizzeria
+<h1 align="center">API ECOMMERCE MERN - Pizzeria</h1>
+<p align="center"><img src="https://res.cloudinary.com/dky2vpnyr/image/upload/v1677455914/MyPortfolio/Card_CroguennecYoannGithub_bl1zko.svg" width="500" alt="Croguennec Yoann Dev Card"/></p>

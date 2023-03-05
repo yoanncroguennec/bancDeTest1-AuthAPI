@@ -1,10 +1,15 @@
 /* ****************************************************************
 ************************** ADMINISTRATOR **************************
 **************************************************************** */
+// MODELS
 const Product = require('../../models/Product')
+// MIDDLEWARES ERRORS
+const ErrorHandler = require('../../utils/errors/errorHandler');
+// UTILS ERRORS
+const catchAsyncErrors = require('../../middlewares/errors/catchAsyncErrors');
 
 
-exports.newProduct = async (req, res, next) => {
+exports.newProduct = catchAsyncErrors(async (req, res, next) => {
 
     // Chope ID de l'User, donc obligé de se loguer pour add a product
     req.body.user = req.user.id;
@@ -15,45 +20,15 @@ exports.newProduct = async (req, res, next) => {
         success: true,
         product
     })
-}
+})
 
-exports.updateProduct = async (req, res, next) => {
+exports.updateProduct = catchAsyncErrors(async (req, res, next) => {
 
     let product = await Product.findById(req.params.id);
 
     if (!product) {
         return next(new ErrorHandler('Product not found', 404));
     }
-
-    // let images = []
-    // if (typeof req.body.images === 'string') {
-    //     images.push(req.body.images)
-    // } else {
-    //     images = req.body.images
-    // }
-
-    // if (images !== undefined) {
-
-    //     // Deleting images associated with the product
-    //     for (let i = 0; i < product.images.length; i++) {
-    //         const result = await cloudinary.v2.uploader.destroy(product.images[i].public_id)
-    //     }
-
-    //     let imagesLinks = [];
-
-    //     for (let i = 0; i < images.length; i++) {
-    //         const result = await cloudinary.v2.uploader.upload(images[i], {
-    //             folder: 'products'
-    //         });
-
-    //         imagesLinks.push({
-    //             public_id: result.public_id,
-    //             url: result.secure_url
-    //         })
-    //     }
-
-    //     req.body.images = imagesLinks
-    // }
 
     product = await Product.findByIdAndUpdate(req.params.id, req.body, {
         new: true,
@@ -64,10 +39,9 @@ exports.updateProduct = async (req, res, next) => {
         success: true,
         product
     })
+})
 
-}
-
-exports.deleteProduct = async (req, res, next) => {
+exports.deleteProduct = catchAsyncErrors(async (req, res, next) => {
 
     const product = await Product.findById(req.params.id);
 
@@ -86,4 +60,4 @@ exports.deleteProduct = async (req, res, next) => {
         success: true,
         message: 'Product is deleted.'
     })
-}
+})
