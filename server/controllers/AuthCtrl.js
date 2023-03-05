@@ -10,7 +10,7 @@ const cloudinary = require('cloudinary');
 
 
 // Arguments ("res" & "req") de la callback
-exports.registerUser = catchAsyncErrors(async (req, res, next) => {
+exports.register = catchAsyncErrors(async (req, res, next) => {
 
     const result = await cloudinary.v2.uploader.upload(req.body.avatar, {
         folder: 'avatars',
