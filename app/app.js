@@ -13,7 +13,11 @@ const app = express();
 
 // MIDDLEWARES
 app.use(express.json());
-app.use(cors())
+const corsOptions = {
+    origin: true, //included origin as true
+    credentials: true, //included credentials as true
+};
+app.use(cors(corsOptions));
 app.use(bodyParser.urlencoded({ extended: true }));
 // For auth
 app.use(cookieParser())
