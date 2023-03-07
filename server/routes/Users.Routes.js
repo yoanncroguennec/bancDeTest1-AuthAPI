@@ -8,7 +8,7 @@ const {
 const { isAuthenticatedUser } = require('../middlewares/auth/auth');
 
 router.route('/')
-    .get(isAuthenticatedUser, getAllUsers);
+    .get(getAllUsers);
 
 
 module.exports = router;
