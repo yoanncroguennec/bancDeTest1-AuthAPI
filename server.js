@@ -1,6 +1,5 @@
 // Setting up config file
-if (process.env.NODE_ENV !== 'PRODUCTION') require('dotenv').config()
-// require("dotenv").config();
+require('dotenv').config()
 const app = require('./app/app')
 
 // CONNECT DB
@@ -17,19 +16,7 @@ const connectDatabase = async () => {
 };
 connectDatabase();
 
-// LISTEN V1
-// Northflank va nous fournir une variable process.env.PORT
-// if (process.env.PORT) {
-//   app.listen(process.env.PORT, () => {
-//     console.log("Server started");
-//   });
-// } else {
-//   app.listen(3200, () => {
-//     console.log("Server started");
-//   });
-// }
-
 // LISTEN V2
 app.listen(process.env.PORT || 3200, () => {
-  console.log(`Server started in ${process.env.NODE_ENV} mode.`);
+  console.log(`Server started in ${process.env.PORT} mode.`);
 });

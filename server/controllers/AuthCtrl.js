@@ -1,22 +1,12 @@
 // MODELS
 const User = require('../models/User');
-// MIDDLEWARES ERRORS
-const ErrorHandler = require('../utils/errors/errorHandler');
-// UTILS ERRORS
-const catchAsyncErrors = require('../middlewares/errors/catchAsyncErrors');
 // UTILS JWT
 const sendToken = require("../utils/jwt/jwtToken")
 const cloudinary = require('cloudinary');
 
 
 // Arguments ("res" & "req") de la callback
-exports.register = catchAsyncErrors(async (req, res, next) => {
-
-    const result = await cloudinary.v2.uploader.upload(req.body.avatar, {
-        folder: 'avatars',
-        width: 150,
-        crop: "scale"
-    })
+exports.register = async (req, res, next) => {
 
     const { firstName, lastName, email, password, sex} = req.body;
 
@@ -26,43 +16,36 @@ exports.register = catchAsyncErrors(async (req, res, next) => {
         email,
         password,
         avatar: {
-            public_id: result.public_id,
-            url: result.secure_url
+            public_id: "1245685gtfdfy",
+            url: "https://res.cloudinary.com/dky2vpnyr/image/upload/v1678023918/avatars/ggu8oaacxs146nckismt.jpg"
         },
         sex
     })
 
     sendToken(user, 200, res)
-})
+}
 
-exports.login = catchAsyncErrors(async (req, res, next) => {
+exports.login = async (req, res, next) => {
     const { email, password } = req.body;
 
     // Checks if email and password is entered by user
-    if (!email || !password) {
-        return next(new ErrorHandler('Please enter email & password', 400))
-    }
+    if (!email || !password) return res.status(400).json({ message: "Please enter email & password" });
 
     // Finding user in database
     const user = await User.findOne({ email }).select('+password')
 
-    if (!user) {
-        return next(new ErrorHandler('Invalid Email or Password', 401));
-    }
+   if (!user) return res.status(401).json({ message: "Invalid Email or Password" });
 
     // Checks if password is correct or not
     const isPasswordMatched = await user.comparePassword(password);
 
-    if (!isPasswordMatched) {
-        return next(new ErrorHandler('Invalid Email or Password', 401));
-    }
-
+    if (!isPasswordMatched) return res.status(401).json({ message: "Invalid Password" });
 
     // Function "sendToken" in "UTILS JWT" pour stocker le token dans le cookie
     sendToken(user, 200, res)
-})
+}
 
-exports.logout = catchAsyncErrors(async (req, res, next) => {
+exports.logout = async (req, res, next) => {
     res.cookie('token', null, {
         expires: new Date(Date.now()),
         httpOnly: true
@@ -72,4 +55,4 @@ exports.logout = catchAsyncErrors(async (req, res, next) => {
         success: true,
         message: 'Déconnecté'
     })
-})
+}

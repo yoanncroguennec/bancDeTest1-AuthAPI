@@ -1,29 +1,14 @@
 const express = require('express')
 const router = express.Router();
 
-/* ****************************************************************
-******************************* USER ******************************
-**************************************************************** */
-const {
-    getUserProfile
-} = require('../controllers/UserCtrl')
-
-/* ****************************************************************
-************************** ADMINISTRATOR **************************
-**************************************************************** */
 const {
     getAllUsers
-} = require('../controllers/admin/UserCtrl_Admin')
+} = require('../controllers/UserCtrl')
 // MIDDLEWARES
-const { isAuthenticatedUser, authorizeRoles } = require('../middlewares/auth/auth');
-
-
-
-router.route('/me')
-    .get(isAuthenticatedUser, getUserProfile);
+const { isAuthenticatedUser } = require('../middlewares/auth/auth');
 
 router.route('/')
-    .get(getAllUsers);
+    .get(isAuthenticatedUser, getAllUsers);
 
 
 module.exports = router;
